@@ -1,34 +1,36 @@
-# Restaurant Finder App
+# Restaurant Bay App -
 
-![App Screenshot](screenshots/app-preview.png)
+## Features ✨
 
-A mobile application for discovering nearby restaurants, viewing menus, and getting directions. Built with React Native, Expo, and TypeScript.
+- 🗺️ **Interactive Map View** - See restaurants near your location
+- 🔍 **Smart Search** - Find restaurants by name, cuisine, or location
+- 📜 **Detailed Menus** - Browse full menus with dietary information
+- 📍 **Get Directions** - One-tap navigation to any restaurant
+- 🏷️ **Special Offers** - View current discounts and promotions
+- ⏱️ **Delivery Estimates** - See preparation and delivery times
 
-## Features
+## Screenshots 📸
 
-- 🗺️ Interactive map view showing nearby restaurants
-- 🔍 Search and filter restaurants by name, cuisine, or category
-- 📱 Responsive design that works on all screen sizes
-- 📍 Location-based restaurant recommendations
-- 📜 Detailed restaurant menus with dietary tags
-- 🛒 Add items to cart functionality
-- 🧭 Get directions to restaurants with one tap
-- ⭐ Restaurant ratings and price indicators
+### Restaurant Discovery
 
-## Technologies Used
+| Home Screen                                            | Restaurant List                                                                                       | Filter View                                            |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| <img src="src/screenshots/1000013713.jpg" width="200"> | <img src="/Users/hamjethmisree/Desktop/dev/RestaurantBay/src/screenshots/1000013718.jpg" width="200"> | <img src="src/screenshots/1000013719.jpg" width="200"> |
 
-- **Frontend**: React Native
-- **Navigation**: React Navigation
-- **UI Components**: React Native Paper
-- **Maps**: react-native-maps
-- **Icons**: react-native-vector-icons
-- **Responsive Design**: react-native-responsive-screen
-- **State Management**: React Context API
-- **Type Checking**: TypeScript
+### Restaurant Details
 
-## Installation
+| Menu Screen                            | Special Offers                         | Order Summary |
+| -------------------------------------- | -------------------------------------- | ------------- |
+| <img src="1000013719.jpg" width="200"> | <img src="1000013718.jpg" width="200"> | Coming Soon   |
 
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/yourusername/restaurant-finder-app.git](https://github.com/Hamjeth68/RestaurantBay.git)
-   cd RestaurantBay
+## Key Functionality 🛠️
+
+```javascript
+// Example of core functionality
+function findRestaurants(location, cuisine) {
+  return restaurants.filter(
+    (restaurant) =>
+      restaurant.location === location && restaurant.cuisine === cuisine
+  );
+}
+```
