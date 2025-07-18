@@ -2,6 +2,49 @@
   "expo": {
     "name": "RestaurantBay",
     "slug": "RestaurantBay",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow RestaurantBay to use your location.",
+          "locationAlwaysPermission": "Allow RestaurantBay to use your location.",
+          "locationWhenInUsePermission": "Allow RestaurantBay to use your location to find nearby restaurants."
+        }
+      ],
+      [
+        "react-native-permissions",
+        {
+          "locationWhenInUsePermission": "Allow RestaurantBay to use your location to find nearby restaurants."
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to find nearby restaurants",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs location access to find nearby restaurants",
+        "NSLocationAlwaysUsageDescription": "This app needs location access to find nearby restaurants",
+        "UIBackgroundModes": [
+          "location"
+        ]
+      },
+      "bundleIdentifier": "com.restaurantbay"
+    },
+    "android": {
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION"
+      ],
+      "package": "com.restaurantbay"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9c54763f-60d7-4083-9dbf-a6f777cb598d"
+      }
+    }
   }
 }

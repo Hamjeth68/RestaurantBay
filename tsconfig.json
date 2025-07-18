@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "isolatedModules": true, // Required for Babel transpilation
+    "jsx": "react-native", // Preserve JSX for RN
+    "lib": ["es2017", "dom"], // Target modern JS features
+    "moduleResolution": "nodenext",
+    "noEmit": true, // Babel handles transpilation
+    "skipLibCheck": true,
+    "customConditions": ["expo", "react-native"],
+    "strict": true, // Enable strict type-checking
+    "target": "esnext", // Modern JS target
+    "baseUrl": "./", // Base directory for imports
+    "paths": {
+      "@/*": ["src/*"] // Optional: Alias imports (e.g., "@/components")
+    }
+  },
+  "extends": "expo/tsconfig.base",
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
