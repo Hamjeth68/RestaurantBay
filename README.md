@@ -60,3 +60,7 @@ To set up the iOS version of the app, follow these steps:
 | Home Screen                                            | Restaurant List                                        | Filter View                                            |
 | ------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ |
 | <img src="src/screenshots/1000013713.jpg" width="200"> | <img src="src/screenshots/1000013718.jpg" width="200"> | <img src="src/screenshots/1000013719.jpg" width="200"> |
+
+## Demo Video 🎥
+
+https://drive.google.com/file/d/1sfkpnU6_4E0lAbeOhqlP05wbBcVRapt3/view?usp=share_link
