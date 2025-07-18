@@ -1,4 +1,4 @@
-# Restaurant Bay App -
+# Restaurant Bay App
 
 ## Getting Started
 
